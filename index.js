@@ -55,7 +55,7 @@ app.get('/contact', function(req, res) {
 
 
 app.listen(8080);
-console.log('Server is listening on port http://192.168.0.101:8000');
+console.log('Server is listening on port http://192.168.0.101:8080');
 
 app.listen(3000);
-console.log('Server is listening on port http://192.168.0.124:8080');
+console.log('Server is listening on port http://192.168.0.124:8081');
