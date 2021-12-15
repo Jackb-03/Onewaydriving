@@ -62,13 +62,22 @@ p {
     font-family:Verdana !important;
     }
 
+#navlogo{
+    text-align:center;
+        border-radius: 10px;
+        width: auto;
+        height: 150px;
+    }
+
 
 
 @media (pointer:none), (pointer:coarse) {
     .intro-jumbotron{
         height: 100vw;
     }
+
+
 }
 
 
-
+  
