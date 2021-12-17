@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="main.css"/>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-  var image1=new Image()
-  image1.src="services1.jpg"
+  <script type="text/javascript">
+    var image1 = new Image()
+    image1.src = "services1.jpg"
 
-  var image2=new Image()
-  image2.src="services2.jpg"
+    var image2 = new Image()
+    image2.src = "services2.jpg"
 
-  var image3=new Image()
-  image3.src="student14.jpg"
+    var image3 = new Image()
+    image3.src = "services3.jpg"
 
-  var image4=new Image()
-  image4.src="student15.jpg"
+    var image4 = new Image()
+    image4.src = "student15.jpg"
 
-  var image5=new Image()
-  image5.src="student16.jpg"
+    var image5 = new Image()
+    image5.src = "student16.jpg"
 
-  var image6=new Image()
-  image6.src="student4.jpg"
+    var image6 = new Image()
+    image6.src = "student4.jpg"
 
-  var image7=new Image()
-  image7.src="student17.jpg"
+    var image7 = new Image()
+    image7.src = "student17.jpg"
 
   //learners permit
 
-</script>
+  </script>
 
 
-<style>
+  <style>
+    .item1 {
+      max-width: 920px;
+      max-height: 920px;
+      height: 600px;
+      width: 920px;
+      /* ie8 */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px;
 
-.item1 {
-    max-width: 920px;
-    max-height: 920px;
-    height: 600px;
-    width: 920px; /* ie8 */ 
-    text-align: center; 
-    margin: 0;
-    padding: 0;
-    border-radius: 25px;
-    
-}
+    }
 
-.flex-container{
-  width: 100%;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+    .flex-container {
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
 
-}
+    }
 
-.li1 {
-  font-family:Verdana !important;
-    font-size: calc(2em + 1vmin)
-}
+    .li1 {
+      font-family: Verdana !important;
+      font-size: calc(2em + 1vmin)
+    }
 
-li span {
-  position: relative;
-  left: -10px;
-}
-
-</style>
+    li span {
+      position: relative;
+      left: -10px;
+    }
+  </style>
   <%- include('../partials/head'); %>
 </head>
 
@@ -91,55 +91,58 @@ li span {
 
 <body>
 
-<main>
+  <main>
 
 
-    <div class="flex-container  jumbotron mycustom-jumbotron mx-auto" style="margin-top: 150px; border-radius: 5px; padding:14px;">
+    <div class="flex-container  jumbotron mycustom-jumbotron mx-auto"
+      style="margin-top: 150px; border-radius: 5px; padding:14px;">
 
       <div class="item1">
-          <img class="img-responsive mycustom-jumbotron" name=slide style="text-align:center; height: 550px; width: auto;" src="services1.jpg">
+        <img class="img-responsive mycustom-jumbotron" name=slide style="text-align:center; height: 550px; width: auto;"
+          src="services1.jpg">
       </div>
 
       <script>
         //variable that will increment through the images
-        var step=1
-        function slideit(){
-        //if browser does not support the image object, exit.
-        if (!document.images)
-        return
-        document.images.slide.src=eval("image"+step+".src")
-        if (step<7)
-        step++
-        else
-        step=1
-        //call function "slideit()"every 5 seconds
-        setTimeout("slideit()",5000)
+        var step = 1
+        function slideit() {
+          //if browser does not support the image object, exit.
+          if (!document.images)
+            return
+          document.images.slide.src = eval("image" + step + ".src")
+          if (step < 7)
+            step++
+          else
+            step = 1
+          //call function "slideit()"every 5 seconds
+          setTimeout("slideit()", 5000)
         }
         slideit()
       </script>
 
 
       <div style="text-align: center; max-width: 910px;">
-          <h1 style="font-weight: bold; font-size:calc(3em + 1vmin);">
-              Services
-          </h1>
+        <h1 style="font-weight: bold; font-size:calc(3em + 1vmin);">
+          Services
+        </h1>
 
-          <p>
-            One Way Driving Offers a range of services, with the predominant ones being:
-          </p>
-          
-          <ul'>
-            <i>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>Learner driving lessons</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>Refresher driving lessons</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>International license conversion</span></li>
+        <p>
+          One Way Driving Offers a range of services, with the predominant ones being:
+        </p>
 
-            </i>
+        <ul'>
+          <i>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>Learner driving lessons</span></li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>Refresher driving lessons</span></li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>International license conversion</span>
+            </li>
+
+          </i>
           </ul>
 
       </div>
 
-  </div>
+    </div>
 
 
     <div class="flex-container jumbotron mycustom-jumbotron mx-auto" style="margin-top: 0;">
@@ -150,21 +153,26 @@ li span {
       <br>
       <p style="font-size: calc(2em + 1vmin);text-align: justify; text-justify: inter-word;">
         <ul'>
-            <i>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>The lessons are conducted with a patient, Fully qualified, ADTA certified instructor</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>Driving test preparation and trial tests</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>Night driving lessons are available</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>Parents are welcome to come along</span></li>
-              <li style="margin: 15px 0; text-align: center;" class="li1"><span>60 and 90-minute lessons available</span></li>
-            </i>
+          <i>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>The lessons are conducted with a patient,
+                Fully qualified, ADTA certified instructor</span></li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>Driving test preparation and trial
+                tests</span></li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>Night driving lessons are available</span>
+            </li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>Parents are welcome to come along</span>
+            </li>
+            <li style="margin: 15px 0; text-align: center;" class="li1"><span>60 and 90-minute lessons available</span>
+            </li>
+          </i>
           </ul>
-        <p style="text-align: center;"> <br>Call <i>Gene</i> on: <u>0404 886 153</u>, for more Infomation</p>
+          <p style="text-align: center;"> <br>Call <i>Gene</i> on: <u>0404 886 153</u>, for more Infomation</p>
       </p>
 
     </div>
 
 
-    
+
 
     <div class="flex-container jumbotron mycustom-jumbotron mx-auto" style="margin-top: 0;">
 
@@ -173,21 +181,25 @@ li span {
       </h1>
       <br>
       <p style="font-size: calc(2em + 1vmin);text-align: justify; text-justify: inter-word;">
-        Have you taken a break from driving? Looking to get back on the road? A refresher lesson maybe what you need. Our lessons are tailored to every type of driver to provide a safe and educational lesson.
+        Have you taken a break from driving? Looking to get back on the road? A refresher lesson maybe what you need.
+        Our lessons are tailored to every type of driver to provide a safe and educational lesson.
         <br>
         Refresher driving lessons may be suitable for if you under any of the following categories:
       </p>
       <ul'>
-            <i>
-              <li style="margin: 15px 0; text-align: justify" class="li1"><span>Have been involved in an accident and are looking to regain confidence</span></li>
-              <li style="margin: 15px 0; text-align: justify;" class="li1"><span>An elderly driver looking to keep skills in check to maintain independence when it comes to driving</span></li>
-              <li style="margin: 15px 0; text-align: justify;" class="li1"><span>Looking to get back onto the road after taking a break from driving</span></li>
-            </i>
-          </ul>
-      <p style="text-align: center;"> <br>Call <i>Gene</i> on: <u>0404 886 153</u>, for more Infomation</p>
+        <i>
+          <li style="margin: 15px 0; text-align: justify" class="li1"><span>Have been involved in an accident and are
+              looking to regain confidence</span></li>
+          <li style="margin: 15px 0; text-align: justify;" class="li1"><span>An elderly driver looking to keep skills in
+              check to maintain independence when it comes to driving</span></li>
+          <li style="margin: 15px 0; text-align: justify;" class="li1"><span>Looking to get back onto the road after
+              taking a break from driving</span></li>
+        </i>
+        </ul>
+        <p style="text-align: center;"> <br>Call <i>Gene</i> on: <u>0404 886 153</u>, for more Infomation</p>
     </div>
 
-    
+
     <div class="flex-container jumbotron mycustom-jumbotron mx-auto" style="margin-top: 0;">
 
       <h1 style="font-weight: bold; font-size:calc(3em + 1vmin); text-align: center;">
@@ -195,25 +207,30 @@ li span {
       </h1>
       <br>
       <p style="font-size: calc(2em + 1vmin);text-align: justify; text-justify: inter-word;">
-        If you are converting from an overseas driver’s licence to a South Australian driver’s licence it pays to have some professional tuition before attempting the Vehicle On Road Test (VORT). A driver on an overseas licence who holds a permanent residence visa must obtain a South Australian driving licence within 3 months.
+        If you are converting from an overseas driver’s licence to a South Australian driver’s licence it pays to have
+        some professional tuition before attempting the Vehicle On Road Test (VORT). A driver on an overseas licence who
+        holds a permanent residence visa must obtain a South Australian driving licence within 3 months.
         <br>
         <br>
         Call us today for more information about how we can help you attain your South Australian driver’s licence.
         <br>
         <br>
-        For more information about overseas licence conversions click here <a href="https://www.sa.gov.au/topics/driving-and-transport/licences/interstate-and-overseas/driving-with-an-overseas-licence"> <u>https://www.sa.gov.au/topics/driving-and-transport/licences/interstate-and-overseas/driving-with-an-overseas-licence</u></a>
+        For more information about overseas licence conversions click here <a
+          href="https://www.sa.gov.au/topics/driving-and-transport/licences/interstate-and-overseas/driving-with-an-overseas-licence">
+          <u>https://www.sa.gov.au/topics/driving-and-transport/licences/interstate-and-overseas/driving-with-an-overseas-licence</u></a>
       </p>
 
     </div>
 
 
 
-</main>
+  </main>
 
 
-<footer>
-  <%- include('../partials/footer'); %>
-</footer>
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
 
 </body>
+
 </html>
